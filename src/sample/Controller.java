@@ -10,6 +10,7 @@ import javafx.scene.text.Text;
 
 public class Controller {
 
+    private Model model;
     private boolean go;
     int numberTasks;
 
@@ -24,6 +25,7 @@ public class Controller {
     @FXML Text text1;
 
     public Controller () {
+        this.model = model;
         this.go = false;
         this.numberTasks = 0;
     }
