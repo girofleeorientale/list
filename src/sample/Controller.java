@@ -59,6 +59,13 @@ public class Controller {
         System.out.println("hola");
     }
 
+    @FXML public void addTask () {
+        String taskText = textArea.getText();
+        Task task = Task.createTask(numberTasks++, taskText, 5, false);
+        System.out.println(numberTasks);
+        textArea.clear();
+    }
+
 
 
     // views

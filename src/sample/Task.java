@@ -38,5 +38,14 @@ public class Task {
         this.done = done;
     }
 
+    public static Task createTask(int uid, String text, long dateTime, boolean done) {
+        Task task = new Task();
+        task.uid = uid;
+        task.text = text;
+        task.dateTime = dateTime;
+        task.done = done;
+
+        return task;
+    }
 
 }
