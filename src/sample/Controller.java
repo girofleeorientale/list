@@ -25,6 +25,11 @@ public class Controller {
     @FXML Text text1;
 
     public Controller () {
+        this.go = false;
+        this.numberTasks = 0;
+    }
+
+    public Controller (Model model) {
         this.model = model;
         this.go = false;
         this.numberTasks = 0;

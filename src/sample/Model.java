@@ -16,6 +16,10 @@ public class Model {
         }
     }
 
+    public void addTask() {
+        tasksList.add(currentTask);
+    }
+
     public boolean isEmpty() {
         return false;
     }
