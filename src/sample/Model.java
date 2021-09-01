@@ -16,8 +16,8 @@ public class Model {
         }
     }
 
-    public void addTask() {
-        tasksList.add(currentTask);
+    public void addTask(Task t) {
+        tasksList.add(t);
     }
 
     public boolean isEmpty() {

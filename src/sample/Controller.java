@@ -25,6 +25,7 @@ public class Controller {
     @FXML Text text1;
 
     public Controller () {
+        this.model = new Model();
         this.go = false;
         this.numberTasks = 0;
     }
@@ -60,9 +61,13 @@ public class Controller {
     }
 
     @FXML public void addTask () {
+//        this.model = new Model();
         String taskText = textArea.getText();
         Task task = Task.createTask(numberTasks++, taskText, 5, false);
         System.out.println(numberTasks);
+        model.tasksList.add(task);
+        System.out.println(model.tasksList.get(numberTasks-1).getText());
+        System.out.println("id:"+ model.tasksList.get(numberTasks-1).getId());
         textArea.clear();
     }
 
