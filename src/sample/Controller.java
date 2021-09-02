@@ -68,6 +68,7 @@ public class Controller {
         model.tasksList.add(task);
         System.out.println(model.tasksList.get(numberTasks-1).getText());
         System.out.println("id:"+ model.tasksList.get(numberTasks-1).getId());
+        buttonAdd.setOnAction(event -> text1.setText(text1.getText() + "\n Input: " + textArea.getText()));
         textArea.clear();
     }
 
