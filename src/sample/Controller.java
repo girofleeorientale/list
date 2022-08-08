@@ -62,7 +62,7 @@ public class Controller {
 
     @FXML public void addTask () {
 //        this.model = new Model();
-        String taskText = textArea.getText();
+        String taskText = textArea.getText();  
         Task task = Task.createTask(numberTasks++, taskText, 5, false);
         System.out.println(numberTasks);
         model.tasksList.add(task);
