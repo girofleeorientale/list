@@ -57,7 +57,7 @@ public class Controller {
             text1.setStrikethrough(false);
             go = false;
         }
-        System.out.println("hola");
+        System.out.println(">>>");
     }
 
     @FXML public void addTask () {
