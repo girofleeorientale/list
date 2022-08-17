@@ -6,6 +6,11 @@ public class Task {
     private long dateTime;
     private boolean done;
 
+    @Override
+    public String toString() {
+        return "task: " + text;
+    }
+
     public int getId () {
         return this.uid;
     }
