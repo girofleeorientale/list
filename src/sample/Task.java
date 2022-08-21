@@ -8,7 +8,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "task: " + text;
+        return "task: " + text + "on date" + dateTime;
     }
 
     public int getId () {
